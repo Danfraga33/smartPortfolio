@@ -13,11 +13,12 @@ import { AIMessage, HumanMessage } from "@langchain/core/messages";
 import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
 import { Redis } from "@upstash/redis";
 import { UpstashRedisCache } from "langchain/cache/upstash_redis";
+import { NextRequest } from "next/server";
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const messages = body.messages;
+    const messages = body.messages ?? [];
 
     const chatHistory = messages
       .slice(0, -1)
@@ -39,13 +40,11 @@ export async function POST(req: Request) {
       modelName: "gpt-3.5-turbo",
       streaming: true,
       callbacks: [handlers],
-
       cache,
     });
 
     const rephrasingModel = new ChatOpenAI({
       modelName: "gpt-3.5-turbo",
-
       cache,
     });
     const retriever = (await getVectorStore()).asRetriever();
@@ -96,6 +95,7 @@ export async function POST(req: Request) {
 
     // So the model can refer to the last message (message above)
     const chain = prompt.pipe(chatModel);
+
     retrievalChain.invoke({
       input: currentMessageContent,
       chat_history: chatHistory,
