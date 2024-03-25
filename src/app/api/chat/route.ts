@@ -1,24 +1,26 @@
-import { ChatOpenAI } from "@langchain/openai";
-import { LangChainStream, StreamingTextResponse } from "ai";
+import { getVectorStore } from "@/lib/astradb";
+import { AIMessage, HumanMessage } from "@langchain/core/messages";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
   PromptTemplate,
 } from "@langchain/core/prompts";
-import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
-import { createRetrievalChain } from "langchain/chains/retrieval";
-import { getVectorStore } from "@/lib/astradb";
-import { Message as VercelChatMessage } from "ai/react";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
+import { ChatOpenAI } from "@langchain/openai";
 import { Redis } from "@upstash/redis";
+import {
+  LangChainStream,
+  StreamingTextResponse,
+  Message as VercelChatMessage,
+} from "ai";
 import { UpstashRedisCache } from "langchain/cache/upstash_redis";
-import { NextRequest } from "next/server";
+import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
+import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
+import { createRetrievalChain } from "langchain/chains/retrieval";
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const messages = body.messages ?? [];
+    const messages = body.messages;
 
     const chatHistory = messages
       .slice(0, -1)
@@ -40,11 +42,13 @@ export async function POST(req: NextRequest) {
       modelName: "gpt-3.5-turbo",
       streaming: true,
       callbacks: [handlers],
+      // verbose: true,
       cache,
     });
 
     const rephrasingModel = new ChatOpenAI({
       modelName: "gpt-3.5-turbo",
+      // verbose: true,
       cache,
     });
     const retriever = (await getVectorStore()).asRetriever();
@@ -92,9 +96,6 @@ export async function POST(req: NextRequest) {
       combineDocsChain,
       retriever: historyAwareRetrieverChain,
     });
-
-    // So the model can refer to the last message (message above)
-    const chain = prompt.pipe(chatModel);
 
     retrievalChain.invoke({
       input: currentMessageContent,
