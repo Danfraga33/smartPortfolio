@@ -7,7 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   title: {
     template: "%s | Daniel Fraga",
     default: "Daniel Fraga",
