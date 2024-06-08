@@ -3,11 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "next-themes";
-// import { ThemeProvider } from "./components/ThemeProvider";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = { 
+export const metadata: Metadata = {
   title: {
     template: "%s | Daniel Fraga",
     default: "Daniel Fraga",
@@ -25,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <Navbar />
-          <main className="px-3 max-w-3xl mx-auto py-10">{children}</main>
+          <main className="px-3 max-w-4xl mx-auto py-10">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
