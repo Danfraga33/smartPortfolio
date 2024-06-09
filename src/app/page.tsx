@@ -20,13 +20,13 @@ export default function Home() {
             I&apos;m a fullstack developer who builds Full stack applications
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <Image
             src={me}
             width={300}
             height={300}
             alt="Daniel Fraga"
-            className="rounded-full aspect-square border-2 object-cover shadow-md dark:border-foreground"
+            className="rounded-full aspect-square border-2 object-cover shadow-xl dark:border-foreground"
           />
         </div>
       </section>
