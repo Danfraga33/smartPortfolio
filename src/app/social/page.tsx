@@ -50,7 +50,7 @@ export default function Page() {
           </li>
           <li>
             <a
-              href="https://danielfraga.dev/"
+              href="https://the-saas-hub.vercel.app/"
               className="text-primary hover:underline"
             >
               Blog
