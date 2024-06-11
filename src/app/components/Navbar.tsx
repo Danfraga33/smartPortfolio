@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="space-x-4 font-medium uppercase tracking-tighter ">
           <Link
             href="/"
-            className={`active:text-[#383595] hover:text-[#183595] dark:active:text-purple-400 dark:hover:text-purple-500 ${!isWorks ? "text-[#383595] dark:text-purple-400" : ""}`}
+            className={`active:text-[#383595] hover:text-[#183595] dark:active:text-purple-400 dark:hover:text-purple-500 ${!isWorks ? "font-semibold text-[#383595] dark:text-purple-400" : ""}`}
           >
             home
           </Link>
