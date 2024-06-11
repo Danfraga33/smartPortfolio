@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
 import { AstraDBVectorStore } from "@langchain/community/vectorstores/astradb";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { AstraDB } from "@datastax/astra-db-ts";
