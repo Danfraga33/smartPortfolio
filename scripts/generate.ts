@@ -22,6 +22,7 @@ async function generateEmbeddings() {
     {
       ".tsx": (path) => new TextLoader(path),
     },
+
     true,
   );
 
