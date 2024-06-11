@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     default: "Daniel Fraga",
   },
   description: "SMART Portfolio",
+  icons: "/DanielFavicon.png",
 };
 
 export default function RootLayout({
@@ -21,10 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} dark:bg-[#000] bg-gradient-to-b from-gray-100 via-purple-200 to-white dark:bg-[url('/laptopClosed.jpg')] bg-contain bg-center bg-no-repeat`}
+      >
         <ThemeProvider attribute="class">
           <Navbar />
-          <main className="px-3 max-w-4xl mx-auto py-10">{children}</main>
+          <main className="px-3 max-w-5xl mx-auto py-10">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
