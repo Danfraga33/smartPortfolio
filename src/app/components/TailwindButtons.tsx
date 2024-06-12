@@ -50,7 +50,7 @@ export const buttons = [
     description: "Sketch button for your website",
 
     component: (
-      <button className="px-4 py-2 rounded-md border border-black bg-violet-400 text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] dark:hover:shadow-[4px_4px_0px_0px_rgba(238,238,238)] active:bg-violet-500 dark:active:bg-violet-500">
+      <button className="px-4 py-2 rounded-md border border-black bg-violet-400 text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] dark:hover:shadow-[4px_4px_0px_0px_rgba(238,238,238)] active:bg-violet-500 dark:active:bg-violet-500 dark:hover:bg-violet-500/95 transition-all">
         <a href="/DanielFragaResume2.pdf" download="Daniel Fraga - Resume">
           Download Resume
         </a>
