@@ -14,13 +14,13 @@ const Navbar = () => {
         <nav className="space-x-4 font-medium uppercase tracking-tighter ">
           <Link
             href="/"
-            className={`active:text-[#383595] hover:text-[#183595] dark:active:text-purple-400 dark:hover:text-purple-500 ${!isWorks ? "font-semibold text-[#383595] dark:text-purple-400" : ""}`}
+            className={`active:text-[#383595] dark:hover:text-gray-300 hover:text-gray-500/65 transition-all dark:active:text-[#da9106]]  ${!isWorks ? "font-semibold text-[#383595] dark:text-[#fd9106]" : ""}`}
           >
             home
           </Link>
           <Link
             href="/works"
-            className={` active:text-[#383595] hover:text-[#183595] dark:active:text-purple-400 dark:hover:text-purple-500 ${isWorks ? "text-[#383595] font-semibold dark:font-semibold dark:text-purple-400" : ""}`}
+            className={` active:text-[#383595]  dark:active:text-[#da9106] hover:text-gray-500/65 ${isWorks ? "text-[#383595] font-semibold dark:font-semibold dark:text-[#fd9106]" : ""}`}
           >
             works
           </Link>
