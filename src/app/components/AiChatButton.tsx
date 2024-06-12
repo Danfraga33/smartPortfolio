@@ -9,7 +9,7 @@ const AiChatButton = () => {
   return (
     <>
       <button onClick={() => setChatBoxOpen(true)}>
-        <Bot size={24} />
+        <Bot size={24} className="dark:text-[#fd9106] text-[#383595]" />
       </button>
       <AIChatbot open={chatBoxOpen} onClose={() => setChatBoxOpen(false)} />
     </>

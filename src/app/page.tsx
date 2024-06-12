@@ -33,7 +33,7 @@ export default function Home() {
             Hi, I&apos;m Daniel Fraga
           </H1>
           <H3 className="text-justify pt-4 sm:text-start font-medium dark:text-slate-300 ">
-            <span className="text-[#3d4d7f] font-semibold dark:text-violet-500">
+            <span className="text-[#3d4d7f] font-semibold dark:text-[#fd9106]">
               Full Stack Developer{" "}
             </span>
             with a dynamic background in e-commerce, web development, and a
