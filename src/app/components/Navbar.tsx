@@ -29,7 +29,7 @@ const Navbar = () => {
           <AiChatButton />
           <ThemeToggle />
           <Button className="bg-[#ffef] text-black  dark:bg-[#222] dark:text-white font-medium p-2">
-            <a href="#contact">Contact</a>
+            <a href="https://danielfraga.dev/#contact">Contact</a>
           </Button>
         </div>
       </div>
