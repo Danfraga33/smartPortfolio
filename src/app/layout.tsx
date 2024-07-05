@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Daniel Fraga",
     default: "Daniel Fraga",
   },
-  description: "SMART Portfolio",
+  description: "Portfolio",
   icons: "/DanielFavicon.png",
 };
 
