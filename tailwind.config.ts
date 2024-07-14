@@ -11,6 +11,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "dark-gradient":
+          "linear-gradient(180deg, rgba(2,0,34,1) 0%, rgba(2,0,70,1) 85%, rgba(0,47,111,1) 100%)",
+        "light-gradient":
+          "radial-gradient(circle, rgba(225,227,231,1) 0%, rgba(223,222,245,1) 50%, rgba(255,255,255,1) 100%);",
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },
