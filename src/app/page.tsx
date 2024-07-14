@@ -15,7 +15,7 @@ import ChatBotDescription from "./components/ChatBotDescription";
 import { SignupForm } from "./components/Form";
 
 export const metadata: Metadata = {
-  title: "Daniel Fraga -  Smart Portfolio",
+  title: "Daniel Fraga - Profile",
 };
 export default function Home() {
   return (
