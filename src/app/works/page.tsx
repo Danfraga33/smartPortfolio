@@ -31,7 +31,7 @@ export default function Page() {
         <p>
           Besides programming 🙌, I enjoy going to the gym 🏋️, travelling
           (I&apos;ve lived in more than 4 countries... 🤯), exploring new
-          restaurent&apos;s 🍝 and enjoy reading about startups, business,
+          restaurant&apos;s 🍝 and enjoy reading about startups, business,
           economics and technology 📖.
         </p>
       </section>
