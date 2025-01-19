@@ -38,13 +38,13 @@ const Navbar = () => {
           <AiChatButton />
           <ThemeToggle />
           <Button className="bg-[#ffef] text-black  dark:bg-[#222] dark:text-white font-medium p-2">
-            <a
+            <Link
               href="https://danielfraga.dev/#contact"
               target="_blank"
               rel="noopener noreferrer"
             >
               Contact
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
