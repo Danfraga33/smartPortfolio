@@ -34,11 +34,11 @@ export default function Home() {
           </H1>
           <H3 className="text-justify pt-4 sm:text-start font-medium dark:text-slate-300 ">
             <span className="text-[#3d4d7f] font-semibold dark:text-[#fd9106]">
-              Full Stack Developer{" "}
+              Full Stack Developer
             </span>
-            with a dynamic background in e-commerce, web development, and a
-            passion for programming, eager to contribute to innovative tech
-            companies.
+            with a diverse background in development and a passion for
+            programming, I am eager to contribute to innovative
+            technology-driven organizations.
           </H3>
         </div>
       </section>
