@@ -72,9 +72,11 @@ export default function Home() {
       </section>
       <section id="tabs-section">
         <TabsDemo />
-        <MultiStepLoaderDemo />
+        {/* <MultiStepLoaderDemo /> */}
       </section>
-      <SignupForm />
+      <section className="py-16">
+        <SignupForm />
+      </section>
       <section className="space-y-3">
         <ChatBotDescription />
       </section>
