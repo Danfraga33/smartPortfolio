@@ -25,7 +25,7 @@ export function SignupForm() {
   return (
     <>
       <div
-        className="col-span-5 w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black"
+        className="col-span-5 w-full mx-auto rounded-2xl md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black"
         id="contact"
       >
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
@@ -102,7 +102,7 @@ export function SignupForm() {
               rows={4}
               cols={50}
               {...register("message", { required: true })}
-              className="p-4 font-medium text-black dark:text-white leading-none text-sm rounded-lg transition duration-300 group/input "
+              className="p-4 font-medium border text-black dark:text-white leading-none text-sm rounded-lg transition duration-300 group/input "
             />
           </LabelInputContainer>
           <button
