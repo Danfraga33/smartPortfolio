@@ -95,37 +95,37 @@ export function TabsDemo() {
         </div>
       ),
     },
-    {
-      title: "JavaScript",
-      value: "javascript",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <div className="flex gap-2">
-            <p>JavaScript </p>
-            <Button className="font-medium p-1 px-2 rounded-lg">
-              <a
-                href="https://theaudiovisualizer.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Audio Visualizer
-              </a>
-            </Button>
-          </div>
-          <video
-            ref={videoRef}
-            aria-label="theaudiovisualizer"
-            height="700"
-            className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-            autoPlay
-            loop
-            muted
-          >
-            <source src="/Balls.mp4" />
-          </video>
-        </div>
-      ),
-    },
+    // {
+    //   title: "JavaScript",
+    //   value: "javascript",
+    //   content: (
+    //     <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+    //       <div className="flex gap-2">
+    //         <p>JavaScript </p>
+    //         <Button className="font-medium p-1 px-2 rounded-lg">
+    //           <a
+    //             href="https://theaudiovisualizer.netlify.app/"
+    //             target="_blank"
+    //             rel="noopener noreferrer"
+    //           >
+    //             Audio Visualizer
+    //           </a>
+    //         </Button>
+    //       </div>
+    //       <video
+    //         ref={videoRef}
+    //         aria-label="theaudiovisualizer"
+    //         height="700"
+    //         className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    //         autoPlay
+    //         loop
+    //         muted
+    //       >
+    //         <source src="/Balls.mp4" />
+    //       </video>
+    //     </div>
+    //   ),
+    // },
     {
       title: "Python",
       value: "python",
@@ -158,10 +158,39 @@ export function TabsDemo() {
         </div>
       ),
     },
+    {
+      title: "Remix",
+      value: "remix",
+
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <div className="flex gap-2">
+            <p>Remix tab</p>
+            <Button className="font-medium p-1 px-2 rounded-lg">
+              <a
+                href="https://techblog-black-pond-8807.fly.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Emerging Tech Blog
+              </a>
+            </Button>
+          </div>
+
+          <Image
+            src="/techblog.jpg"
+            alt="techblog"
+            width="1000"
+            height="1000"
+            className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+          />
+        </div>
+      ),
+    },
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-30">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-30 ">
       <Tabs tabs={tabs} />
     </div>
   );
