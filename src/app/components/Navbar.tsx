@@ -26,12 +26,12 @@ const Navbar = () => {
             works
           </Link>
           <a
-            href="https://stoic-dev-blogger.vercel.app/"
+            href="https://ai-blog-snowy-glitter-4565.fly.dev/blogs"
             target="_blank"
             rel="noopener noreferrer"
             className={` active:text-[#383595]  dark:active:text-[#da9106] hover:text-gray-500/65 ${isBlog ? "text-[#383595] font-semibold dark:font-semibold dark:text-[#fd9106]" : ""}`}
           >
-            blog
+            ai blog
           </a>
         </nav>
         <div className="flex items-center gap-4">
