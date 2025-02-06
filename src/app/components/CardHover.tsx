@@ -5,6 +5,7 @@ import nextIcon from "@/assets/NextIcon.jpg";
 import mongoIcon from "@/assets/mongoIcon.jpg";
 import nodeIcon from "@/assets/nodeIcon.jpg";
 import pythonIcon from "@/assets/pythonIcon.jpeg";
+import remixIcon from "@/assets/remixIcon.jpeg";
 
 export function CardHoverEffect() {
   return (
@@ -43,17 +44,17 @@ export const languages = [
     image: nextIcon,
   },
   {
-    title: "MongoDB/SQL",
+    title: "PostgreSQL/MongoDB",
     description:
       "Flexible databases for every application. MongoDB excels at handling unstructured data, while SQL databases are the cornerstone of structured data management.",
     link: "https://www.mongodb.com/",
     image: mongoIcon,
   },
   {
-    title: "Python",
+    title: "Remix",
     description:
-      "A versatile language used in everything from web development to AI. Python's simple syntax and powerful libraries make it a favorite among developers.",
-    link: "https://www.python.org/",
-    image: pythonIcon,
+      "Modern web framework built on React, focused on fast performance, dynamic routing, and optimized user experience. Emphasizes server-side rendering, seamless data fetching, and provides intuitive, flexible architecture",
+    link: "https://remix.run/",
+    image: remixIcon,
   },
 ];
