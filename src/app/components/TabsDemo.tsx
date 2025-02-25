@@ -15,28 +15,30 @@ export function TabsDemo() {
   }, []);
   const tabs = [
     {
-      title: "React",
-      value: "react",
+      title: "Remix",
+      value: "remix",
+
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <div className="flex gap-2">
-            <p>React</p>
-            <Button className="font-medium p-1 rounded-lg">
+            <p>Remix tab</p>
+            <Button className="font-medium p-1 px-2 rounded-lg">
               <a
-                href="https://wealthwisenavigator.netlify.app/SideHustle"
+                href="https://techblog-black-pond-8807.fly.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Wealthwise
+                Emerging Tech Blog
               </a>
             </Button>
           </div>
+
           <Image
-            src="/tablet-in-hand-mockup.png"
-            alt="wealthwisenavigator"
+            src="/techblog.jpg"
+            alt="techblog"
             width="1000"
             height="1000"
-            className="object-cover object-left-top h-[60%] md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+            className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
           />
         </div>
       ),
@@ -126,6 +128,7 @@ export function TabsDemo() {
     //     </div>
     //   ),
     // },
+
     {
       title: "Python",
       value: "python",
@@ -155,35 +158,6 @@ export function TabsDemo() {
           >
             <source src="/RachelChat.mp4" />
           </video>
-        </div>
-      ),
-    },
-    {
-      title: "Remix",
-      value: "remix",
-
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <div className="flex gap-2">
-            <p>Remix tab</p>
-            <Button className="font-medium p-1 px-2 rounded-lg">
-              <a
-                href="https://techblog-black-pond-8807.fly.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Emerging Tech Blog
-              </a>
-            </Button>
-          </div>
-
-          <Image
-            src="/techblog.jpg"
-            alt="techblog"
-            width="1000"
-            height="1000"
-            className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-          />
         </div>
       ),
     },
