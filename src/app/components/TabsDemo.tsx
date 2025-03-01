@@ -24,7 +24,7 @@ export function TabsDemo() {
             <p>Remix tab</p>
             <Button className="font-medium p-1 px-2 rounded-lg">
               <a
-                href="https://techblog-black-pond-8807.fly.dev/"
+                href="https://nextfrontierhub.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
