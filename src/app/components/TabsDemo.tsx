@@ -97,38 +97,6 @@ export function TabsDemo() {
         </div>
       ),
     },
-    // {
-    //   title: "JavaScript",
-    //   value: "javascript",
-    //   content: (
-    //     <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-    //       <div className="flex gap-2">
-    //         <p>JavaScript </p>
-    //         <Button className="font-medium p-1 px-2 rounded-lg">
-    //           <a
-    //             href="https://theaudiovisualizer.netlify.app/"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             Audio Visualizer
-    //           </a>
-    //         </Button>
-    //       </div>
-    //       <video
-    //         ref={videoRef}
-    //         aria-label="theaudiovisualizer"
-    //         height="700"
-    //         className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-    //         autoPlay
-    //         loop
-    //         muted
-    //       >
-    //         <source src="/Balls.mp4" />
-    //       </video>
-    //     </div>
-    //   ),
-    // },
-
     {
       title: "Python",
       value: "python",

@@ -14,14 +14,12 @@ const Navbar = () => {
     <header className="top-0 bg-transparent">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between gap-3 px-3 py-4">
         <nav className="space-x-4 font-medium uppercase tracking-tighter ">
-          <ScrollLink
-            to="/"
-            smooth={true}
-            duration={700}
+          <Link
+            href="/"
             className={`cursor-pointer active:text-[#383595] dark:hover:text-gray-300 hover:text-gray-500/65 transition-all dark:active:text-[#da9106]]  ${!isWorks ? "font-semibold text-[#383595] dark:text-[#fd9106]" : ""}`}
           >
             home
-          </ScrollLink>
+          </Link>
           <ScrollLink
             to="works"
             smooth={true}

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { H1 } from "./H1";
+import Link from "next/link";
 
 type Tab = {
   title: string;
@@ -74,6 +75,9 @@ export const Tabs = ({
               </span>
             </button>
           ))}
+          <Link href="/works" className="hover:text-[#a08eed]">
+            More
+          </Link>
         </div>
         <H1 className="uppercase hidden md:block ">skills</H1>
       </div>
