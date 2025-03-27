@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav className="space-x-4 font-medium uppercase tracking-tighter ">
           <Link
             href="/"
-            className={`cursor-pointer active:text-[#383595] dark:hover:text-gray-300 hover:text-gray-500/65 transition-all dark:active:text-[#da9106]]  ${!isWorks ? "font-semibold text-[#383595] dark:text-[#fd9106]" : ""}`}
+            className={`cursor-pointer active:text-[#383595]  hover:text-gray-500/65 transition-all dark:active:text-[#da9106]]  ${!isWorks ? "font-semibold text-[#383595] dark:text-[#fd9106]" : ""}`}
           >
             home
           </Link>
