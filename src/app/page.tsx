@@ -70,7 +70,7 @@ export default function Home() {
       <section className="pt-16 ">
         <TextGenerateEffectComponent />
       </section>
-      <section id="tabs-section">
+      <section id="works">
         <TabsDemo />
         {/* <MultiStepLoaderDemo /> */}
       </section>
