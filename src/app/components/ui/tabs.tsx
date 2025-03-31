@@ -75,7 +75,10 @@ export const Tabs = ({
               </span>
             </button>
           ))}
-          <Link href="/works" className="hover:text-[#a08eed]">
+          <Link
+            href="/works"
+            className="text-[#a08eed] underline hover:text-[#C0AFE2] hover:transition-all"
+          >
             More
           </Link>
         </div>
