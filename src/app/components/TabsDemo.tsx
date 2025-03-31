@@ -28,7 +28,7 @@ export function TabsDemo() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Emerging Tech Blog
+                Next Frontier Hub
               </a>
             </Button>
           </div>
