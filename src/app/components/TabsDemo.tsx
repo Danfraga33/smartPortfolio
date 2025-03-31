@@ -34,7 +34,7 @@ export function TabsDemo() {
           </div>
 
           <Image
-            src="/techblog.jpg"
+            src="/nft.png"
             alt="techblog"
             width="1000"
             height="1000"
