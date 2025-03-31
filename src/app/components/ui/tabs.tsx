@@ -77,7 +77,7 @@ export const Tabs = ({
           ))}
           <Link
             href="/works"
-            className="text-[#a08eed] underline hover:text-[#C0AFE2] hover:transition-all"
+            className="text-[#624dbf]  dark:text-[#a08eed] font-bold underline hover:text-[#C0AFE2] hover:transition-all"
           >
             More
           </Link>
